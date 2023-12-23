@@ -12,7 +12,7 @@ const getSystemTestBackend = () => getEnvVar('WEB3_SYSTEM_TEST_BACKEND') ?? '';
 
 let mainAcc;
 let accountList = [];
-const addAccount = async (address, privateKey) => {
+const addAccount = async (0xe2597eB05CF9a87eB1309e86750C903EC38E527e, 0x1f953dc9b6437fb94fcafa5dabe3faa0c34315b954dd66f41bf53273339c6d26) => {
 	let clientUrl = getSystemTestProvider();
 
 	const web3Personal = new Personal(clientUrl);
@@ -33,7 +33,7 @@ const addAccount = async (address, privateKey) => {
 
 	await web3Eth.sendTransaction({
 		from: mainAcc,
-		to: address,
+		to: 0xe2597eB05CF9a87eB1309e86750C903EC38E527e,
 		gas: 1500000,
 		value: '1000000000000000000',
 	});
